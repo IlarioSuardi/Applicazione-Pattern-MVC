@@ -17,6 +17,16 @@ const User = {
       user.numero=(parseInt(user.numero)||0) +1
     }
     return user
+  },
+  decrementa: (id) => {
+    users = users.filter(u => u.id !== parseInt(id));
+    if (user){
+      user.numero=(parseInt(user.numero)||0) -1;
+      if (user.numero<0){
+        user.numero=0;
+      }
+    }
+    return user
   }
 };
 module.exports = User;

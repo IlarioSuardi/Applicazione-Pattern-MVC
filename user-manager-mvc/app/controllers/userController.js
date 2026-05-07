@@ -21,3 +21,7 @@ exports.incrementa = (req, res) => {
   User.incrementa(req.params.id);
   res.redirect('/users');
 };
+exports.decrementa = (req, res) => {
+  User.decrementa(req.params.id);
+  res.redirect('/users');
+};
