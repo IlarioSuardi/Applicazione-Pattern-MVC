@@ -15,3 +15,5 @@ app.use('/', userRoutes);
 app.listen(3000, () => {
   console.log('App in esecuzione su http://localhost:3000');
 });
+// CSS
+app.use(express.static('public'));
