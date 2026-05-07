@@ -8,4 +8,5 @@ router.get('/users', userController.listUsers);
 router.post('/users', userController.createUser);
 router.post('/users/delete/:id', userController.deleteUser);
 router.post('/users/incrementa/:id', userController.incrementa);
+router.post('/users/decrementa/:id', userController.decrementa);
 module.exports = router;

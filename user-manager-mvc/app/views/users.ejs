@@ -17,7 +17,7 @@
   <ul>
     <% users.forEach(user => { %>
       <li>
-        <%= user.name %> - <%= user.email %> - <img src="<%= user.linkImg %>" width="100"> <%= user.numero %> <%= user.prezzo %>
+        <%= user.name %> - <%= user.email %> - <img src="<%= user.linkImg %>" width="100"> - <%= user.numero %> - <%= user.prezzo %>
         <form action="/users/delete/<%= user.id %>" method="POST" style="display:inline;">
           <button type="submit">Elimina</button>
         </form>
