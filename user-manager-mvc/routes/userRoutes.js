@@ -7,4 +7,5 @@ router.get('/', userController.home);
 router.get('/users', userController.listUsers);
 router.post('/users', userController.createUser);
 router.post('/users/delete/:id', userController.deleteUser);
+router.post('/users/incrementa/:id', userController.incrementa);
 module.exports = router;
